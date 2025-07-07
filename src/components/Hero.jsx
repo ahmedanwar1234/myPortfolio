@@ -27,7 +27,7 @@ const shadowRef=useRef()
       x:400,
       duration:2,
     })
-    const isMobile = window.innerWidth < 768; // Tailwind breakpoint: md
+    const isMobile = window.innerWidth < 500; // Tailwind breakpoint: md
     const tl = gsap.timeline({
     scrollTrigger: {
       trigger: boomRef.current,
