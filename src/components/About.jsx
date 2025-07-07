@@ -69,7 +69,7 @@ const About = () => {
      
 
   return (
-    <div className=' p-4'>
+    <div id='about' className=' p-4'>
       <div className=' lg:w-[70%] lg:mx-auto  '>
 
         {/* header about */}

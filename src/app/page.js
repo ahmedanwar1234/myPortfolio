@@ -12,7 +12,7 @@ const page = () => {
 
 
   <Header/>
-<div className=' h-dvh'>
+<div id='home' className=' h-dvh'>
 <Hero/>
 </div>
       <About/>

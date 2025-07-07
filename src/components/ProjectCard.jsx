@@ -12,9 +12,10 @@ const ProjectCard = ({
 }
 ) => {
   return (
-    <div>
-        <div className=" mt-16 flex flex-col p-10 border-[0.5px] rounded-xl border-gray-600">
-<h1 className=" text-3xl">{title}</h1>
+    <div className=" max-sm:w-[320px]">
+        <div className="lg:flex gap-4 lg:flex-row mt-16 flex flex-col p-10 border-[0.5px] rounded-xl border-gray-600">
+<div>
+    <h1 className=" text-3xl">{title}</h1>
 <div className=" mt-5 w-full h-[1px] bg-gray-600 "></div>
 <div className=" mt-5 flex flex-col gap-2">
     {details.map((detail,index)=>{
@@ -51,9 +52,12 @@ const ProjectCard = ({
     </a>
   
 </div>
+</div>
+<div className=" lg:block  h-full flex items-center justify-center">
 
-<div>
+<div className=" lg:w-[300px] w-[300px]  md:w-[500px] ">
     <img  className=" rounded-2xl" src={image} alt="" />
+</div>
 </div>
         </div>
       

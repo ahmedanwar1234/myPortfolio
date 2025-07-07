@@ -35,29 +35,43 @@ const Header = () => {
         rounded-3xl py-4 lg:hover:py-6 lg:hover:px-8 transition-all duration-300 
         px-6 flex flex-row gap-6 lg:gap-7 "
       >
+        <a href="#home">
+
         <div className={`${iconStyle} hover:after:content-['Home']`}>
           <AiFillHome size={21} color="#f8f8f8" />
         </div>
+        </a>
+
+<a href="#about">
 
         <div className={`${iconStyle} hover:after:content-['About']`}>
           <AiOutlineUser size={21} color="#f8f8f8" />
         </div>
+</a>
+
+<a href="#projects">
 
         <div className={`${iconStyle} hover:after:content-['Projects']`}>
           <FaCode size={21} color="#f8f8f8" />
         </div>
+</a>
+<a   href="#contact">
 
         <div className={`${iconStyle} hover:after:content-['Contact']`}>
           <AiOutlineMail size={21} color="#f8f8f8" />
         </div>
-
-        <div className={`${iconStyle} hover:after:content-['LinkedIn']`}>
+</a>
+<a href="https://www.linkedin.com/in/ahmed-anwar-%20%20%20%20%2004173725b">
+ <div className={`${iconStyle} hover:after:content-['LinkedIn']`}>
           <FaLinkedinIn size={21} color="#f8f8f8" />
-        </div>
-
+        </div></a>
+       
+<a href="https://github.com/ahmedanwar1234">
         <div className={`${iconStyle} hover:after:content-['Github']`}>
           <AiFillGithub size={21} color="#f8f8f8" />
         </div>
+</a>
+
       </div>
     </div>
   );
