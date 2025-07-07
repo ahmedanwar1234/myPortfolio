@@ -32,7 +32,7 @@ const shadowRef=useRef()
     scrollTrigger: {
       trigger: boomRef.current,
       start: 'bottom bottom',
-      end: isMobile ? '+=300' : '+=500', // ✅ الفرق هنا    },
+      end: isMobile ? '+=700' : '+=500', // ✅ الفرق هنا    },
   }})
 
   tl.to(boomRef.current, {
