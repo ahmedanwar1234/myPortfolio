@@ -60,7 +60,7 @@ const Cursor = ({children}) => {
       {/* Custom Cursor */}
       <div
         ref={cursorRef}
-        className="fixed top-0 left-0 w-[20px] h-[20px] rounded-full pointer-events-none z-[9999]"
+        className="fixed max-md:hidden top-0 left-0 w-[20px] h-[20px] rounded-full pointer-events-none z-[9999]"
         style={{
           backgroundColor: "white",
           mixBlendMode: "difference",
