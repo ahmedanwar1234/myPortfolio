@@ -27,14 +27,15 @@ const shadowRef=useRef()
       x:400,
       duration:2,
     })
-    const isMobile = window.innerWidth < 500; // Tailwind breakpoint: md
+    const isMobile = window.innerWidth < 500; // Tailwind breakpoint: 
+    console.log(isMobile,"tet")
     const tl = gsap.timeline({
     scrollTrigger: {
       trigger: boomRef.current,
       start: 'bottom bottom',
-      end: isMobile ? '+=700' : '+=500', // ✅ الفرق هنا    },
+      end: isMobile ? '+=1000' : '+=500', // ✅ الفرق هنا    },
   }})
-
+console.log("test")
   tl.to(boomRef.current, {
     y: 400,
   }).to(
@@ -72,7 +73,11 @@ const shadowRef=useRef()
    onComplete: () => setCount(null),
  },">").to("#flash",{opacity:0},">").to([pinRef.current,bommRef.current],{opacity:0},"-=2")
 
-  }, [])
+  
+isMobile&&  setTimeout(() => {
+    ScrollTrigger.refresh();
+  }, 100);
+}, [])
   
 
 
